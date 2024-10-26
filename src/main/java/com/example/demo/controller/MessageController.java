@@ -21,6 +21,11 @@ public class MessageController {
         return "name : " + name + " messageValue : " + messageValue + " message : ";
     }
 
+    @GetMapping("/hello")
+    public String hello() {
+        return "Hello World"; 
+    }
+
 
     
 }
