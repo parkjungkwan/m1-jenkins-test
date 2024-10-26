@@ -13,12 +13,14 @@ import lombok.RequiredArgsConstructor;
 public class MessageController {
 
 
-    @Value("${spring.security.user.name}")
+    @Value("${message.greeting}")
     private String messageValue;
 
     @GetMapping("/message/{name}")
     public String message(@PathVariable String name) {
         return "name : " + name + " messageValue : " + messageValue + " message : ";
     }
+
+
     
 }
